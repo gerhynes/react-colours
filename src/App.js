@@ -1,5 +1,6 @@
 import React from "react";
 import Palette from "./Palette";
+import "./App.css";
 import seedColors from "./seedColors";
 
 function App() {
