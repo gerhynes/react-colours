@@ -1,12 +1,12 @@
 .ColorBox {
-  width: 20%;
+  /* width: 20%;
   height: 25%;
   margin: 0 auto;
   position: relative;
   cursor: pointer;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: -3.5px;
+  margin-bottom: -3.5px; */
 }
 
 .SingleColorPalette .ColorBox {
