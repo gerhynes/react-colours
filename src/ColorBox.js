@@ -147,8 +147,6 @@ class ColorBox extends Component {
     const {
       name,
       background,
-      paletteId,
-      colorId,
       moreUrl,
       showingFullPalette,
       classes
