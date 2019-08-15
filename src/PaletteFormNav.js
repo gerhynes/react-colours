@@ -37,8 +37,8 @@ const styles = theme => ({
     })
   },
   menuButton: {
-    marginLeft: 12,
-    marginRight: 20
+    marginLeft: "12px",
+    marginRight: "20px"
   },
   navBtns: {
     marginRight: "1rem",
