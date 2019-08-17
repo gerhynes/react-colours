@@ -1,12 +1,18 @@
 import sizes from "./sizes";
+import bg from "./bg.svg";
 
 export default {
   root: {
-    backgroundColor: "#3335b6",
-    height: "100vh",
+    minHeight: "100vh",
     display: "flex",
     alignItems: "flex-start",
-    justifyContent: "center"
+    justifyContent: "center",
+    /* background by SVGBackgrounds.com */
+    backgroundColor: "#394bad",
+    backgroundImage: `url(${bg})`
+  },
+  heading: {
+    fontSize: "2rem"
   },
   container: {
     width: "50%",
@@ -42,7 +48,7 @@ export default {
       gridTemplateColumns: "repeat(2, 50%)"
     },
     [sizes.down("xs")]: {
-      gridGap: "1rem",
+      gridGap: "1.4rem",
       gridTemplateColumns: "repeat(1, 100%)"
     }
   }
