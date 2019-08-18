@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
+import { arrayMove } from "react-sortable-hoc";
 import PaletteFormNav from "./PaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
 import Drawer from "@material-ui/core/Drawer";
@@ -10,7 +11,6 @@ import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import DraggableColorList from "./DraggableColorList";
-import { arrayMove } from "react-sortable-hoc";
 import styles from "./styles/NewPaletteFormStyles";
 
 class NewPaletteForm extends Component {
@@ -21,7 +21,6 @@ class NewPaletteForm extends Component {
     super(props);
     this.state = {
       open: true,
-
       colors: this.props.palettes[0].colors
     };
 
@@ -61,7 +60,6 @@ class NewPaletteForm extends Component {
   }
 
   addRandomColor() {
-    // pick random color from existing palattes
     const allColors = this.props.palettes.map(p => p.colors).flat();
     let rand = Math.floor(Math.random() * allColors.length);
     const randomColor = allColors[rand];

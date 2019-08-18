@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { withStyles } from "@material-ui/styles";
 import ColorBox from "./ColorBox";
 import Navbar from "./Navbar";
 import PaletteFooter from "./PaletteFooter";
 import styles from "./styles/PaletteStyles";
-import { withStyles } from "@material-ui/styles";
 
 class SingleColorPalette extends Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class SingleColorPalette extends Component {
         allColors[key].filter(color => color.id === colorToFilterBy)
       );
     }
-    // return all shades of a given colour, except level 50
+    // Return all shades of a given colour, except level 50
     return shades.slice(1);
   }
   changeFormat(val) {
