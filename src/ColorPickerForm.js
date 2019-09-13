@@ -64,7 +64,7 @@ class ColorPickerForm extends Component {
             name="newColorName"
             variant="filled"
             margin="normal"
-            placeholder="Color Name"
+            placeholder="Colour Name"
             onChange={this.handleChange}
             validators={["required", "isColorNameUnique", "isColorUnique"]}
             errorMessages={[

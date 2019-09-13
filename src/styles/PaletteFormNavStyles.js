@@ -57,7 +57,7 @@ const styles = theme => ({
     margin: "0 0.5rem",
     [sizes.down("xs")]: {
       fontSize: "0.75rem",
-      margin: "0.3rem",
+      margin: "0 0.3rem",
       padding: "0.3rem"
     }
   }
