@@ -1,6 +1,6 @@
 import sizes from "./sizes";
-import { DRAWER_WIDTH } from "../constants";
-const drawerWidth = DRAWER_WIDTH;
+// import { DRAWER_WIDTH } from "../constants";
+// const drawerWidth = DRAWER_WIDTH;
 
 const styles = theme => ({
   root: {
@@ -20,16 +20,28 @@ const styles = theme => ({
     height: "64px"
   },
   appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
+    // width: `calc(100% - ${drawerWidth}px)`,
+    // marginLeft: drawerWidth,
+    width: "calc(100% - 400px)",
+    marginLeft: "400px",
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen
     })
   },
+  navTitle: {
+    [sizes.down("xs")]: {
+      fontSize: "1rem"
+    }
+  },
   menuButton: {
     marginLeft: "12px",
-    marginRight: "20px"
+    marginRight: "20px",
+    [sizes.down("xs")]: {
+      padding: "6px",
+      marginLeft: "6px",
+      marginRight: "6px"
+    }
   },
   navBtns: {
     marginRight: "1rem",
@@ -41,11 +53,13 @@ const styles = theme => ({
     }
   },
   button: {
-    margin: "0 0.5rem"
-  },
-  [sizes.down("xs")]: {
-    margin: "0 0.2rem",
-    padding: "0.3rem"
+    minWidth: "auto",
+    margin: "0 0.5rem",
+    [sizes.down("xs")]: {
+      fontSize: "0.75rem",
+      margin: "0.3rem",
+      padding: "0.3rem"
+    }
   }
 });
 

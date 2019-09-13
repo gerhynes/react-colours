@@ -13,10 +13,6 @@
   opacity: 1;
 }
 
-.page-exit {
-  opacity: 1;
-}
-
 .page-exit-active {
   opacity: 0;
 }

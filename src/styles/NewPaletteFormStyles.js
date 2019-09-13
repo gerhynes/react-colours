@@ -1,16 +1,18 @@
-import { DRAWER_WIDTH } from "../constants";
-const drawerWidth = DRAWER_WIDTH;
+// import { DRAWER_WIDTH } from "../constants";
+// const drawerWidth = DRAWER_WIDTH;
 
 const styles = theme => ({
   root: {
     display: "flex"
   },
   drawer: {
-    width: drawerWidth,
+    // width: drawerWidth,
+    width: "400px",
     flexShrink: 0
   },
   drawerPaper: {
-    width: drawerWidth,
+    // width: drawerWidth,
+    width: "400px",
     display: "flex",
     alignItems: "center"
   },
@@ -30,7 +32,8 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
     }),
-    marginLeft: -drawerWidth
+    // marginLeft: -drawerWidth
+    marginLeft: "-400px"
   },
   contentShift: {
     transition: theme.transitions.create("margin", {
